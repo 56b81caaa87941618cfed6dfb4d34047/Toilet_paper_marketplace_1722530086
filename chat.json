@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_acknowledge",
+        "content": "Understood, working on changing the background to banana theme.",
+        "message_id": "guest01082024163901",
+        "timestamp": "01082024163902",
+        "component_file_name": "",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "change the background to be banana themed",
         "message_id": "guest01082024163901",
