@@ -30,5 +30,11 @@
         "content": "Do you prefer a realistic banana image or a cartoon/illustrated banana design for the background? Realistic banana image",
         "timestamp": "01082024164004",
         "message_id": "guest01082024164004"
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Sure, I'll work on adding a realistic banana image to the background.",
+        "timestamp": "01082024164005",
+        "message_id": "guest01082024164004"
     }
 ]
