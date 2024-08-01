@@ -12,5 +12,11 @@
         "content": "change the background to be banana themed",
         "timestamp": "01082024163902",
         "message_id": "guest01082024163901"
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Understood, working on changing the background to banana theme.",
+        "timestamp": "01082024163902",
+        "message_id": "guest01082024163901"
     }
 ]
