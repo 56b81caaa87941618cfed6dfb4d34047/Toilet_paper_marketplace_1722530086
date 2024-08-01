@@ -8,16 +8,15 @@ Vue.component("purple_background_cta_component_1722530087", {
         <div id="section-container" class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
             <div id="content-container" class="relative px-8 py-12 md:py-20 rounded-[3rem] overflow-hidden">
                 <!-- Radial gradient -->
-                <div id="radial-gradient" class="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                    <div id="radial-gradient-outer" class="absolute inset-0 translate-z-0 rounded-full blur-[120px] opacity-70" :class="radialGradientPrimaryStyle"></div>
-                    <div id="radial-gradient-inner" class="absolute w-1/4 h-1/4 translate-z-0 rounded-full blur-[40px]" :class="radialGradientSecondaryStyle">
-                    </div>
+                <!-- Banana-themed background -->
+                <div id="banana-background" class="absolute inset-0 bg-yellow-200 opacity-50 -z-10" aria-hidden="true">
+                    <div class="absolute inset-0 bg-repeat" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\"><path d=\"M25 0c13.807 0 25 11.193 25 25S38.807 50 25 50 0 38.807 0 25 11.193 0 25 0zm0 10c-8.284 0-15 6.716-15 15s6.716 15 15 15 15-6.716 15-15-6.716-15-15-15z\" fill=\"%23FFD700\" /></svg>')"></div>
                 </div>
                 <!-- Blurred shape -->
-                <div id="blurred-shape" class="absolute bottom-0 translate-y-1/2 left-0 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
-                        <defs><linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%"><stop offset="0%" :stop-color="stopColorPrimaryStyle" /><stop offset="100%" :stop-color="stopColorSecondaryStyle" stop-opacity="0" /></linearGradient></defs>
-                        <path fill="url(#bs5-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)" />
+                <!-- Banana shape -->
+                <div id="banana-shape" class="absolute bottom-0 right-0 w-64 h-64 -z-10" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path d="M50 90c-22.091 0-40-17.909-40-40S27.909 10 50 10s40 17.909 40 40-17.909 40-40 40zm0-70c-16.569 0-30 13.431-30 30s13.431 30 30 30 30-13.431 30-30-13.431-30-30-30z" fill="#FFD700"/>
                     </svg>
                 </div>
                 <!-- Content -->
@@ -34,18 +33,18 @@ Vue.component("purple_background_cta_component_1722530087", {
             return {
                 expanded: false, 
                 tab: null,
-                radialGradientPrimaryStyle: "bg-purple-500",
-                radialGradientSecondaryStyle: "bg-purple-400",
-                stopColorPrimaryStyle: "#A855F7",
-                stopColorSecondaryStyle: "#6366F1",
+                radialGradientPrimaryStyle: "bg-yellow-400",
+                radialGradientSecondaryStyle: "bg-yellow-300",
+                stopColorPrimaryStyle: "#FFD700",
+                stopColorSecondaryStyle: "#FFA500",
                 transparentTextStyle: "text-transparent",
-                contentSubtitleStyle: "bg-gradient-to-r from-purple-500 to-purple-200",
-                contentCtaTitleStyle: "bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60",
-                contentBodyStyle: "text-slate-400",
-                contentCtaButtonPrimaryStyle:"text-slate-900",
-                contentCtaButtonGradientStyle: "bg-gradient-to-r from-white/80 via-white to-white/80",
-                contentCtaButtonHoverStyle: "hover:bg-white",
-                contentCtaArrowStyle: "text-purple-500"
+                contentSubtitleStyle: "bg-gradient-to-r from-yellow-500 to-yellow-200",
+                contentCtaTitleStyle: "bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600",
+                contentBodyStyle: "text-yellow-800",
+                contentCtaButtonPrimaryStyle:"text-yellow-900",
+                contentCtaButtonGradientStyle: "bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-300",
+                contentCtaButtonHoverStyle: "hover:bg-yellow-100",
+                contentCtaArrowStyle: "text-yellow-600"
             };
         },
     });
